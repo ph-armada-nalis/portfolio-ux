@@ -47,7 +47,7 @@ export default function Timeline({ lang }: TimelineProps) {
             <Briefcase size={14} className="text-[#5b68f5]" />
             {t.badge}
           </div>
-          <h2 className="font-['IBM_Plex_Mono',monospace] font-bold text-4xl lg:text-5xl xl:text-6xl tracking-[0.02em] text-white mb-6 leading-tight">
+          <h2 className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-4xl lg:text-5xl xl:text-6xl tracking-[0.02em] text-white mb-6 leading-tight">
             {t.titlePrefix}<span className="text-[#6822c9]">{t.titleHighlight}</span>
           </h2>
           <p className="text-[#a4adae] text-lg leading-relaxed">

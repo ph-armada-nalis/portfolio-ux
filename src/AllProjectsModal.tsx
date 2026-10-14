@@ -59,7 +59,7 @@ export default function AllProjectsModal({
           <div>
             <h2
               id="all-projects-title"
-              className="font-['IBM_Plex_Mono',monospace] font-bold text-2xl md:text-3xl text-[#1c1b1b] tracking-tight uppercase"
+              className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-2xl md:text-3xl text-[#1c1b1b] tracking-tight uppercase"
             >
               {isPt ? "Todos os Projetos" : "All Projects"}
             </h2>
