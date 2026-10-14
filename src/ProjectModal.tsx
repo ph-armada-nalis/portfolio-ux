@@ -89,7 +89,7 @@ export default function ProjectModal({
               </div>
               <h2
                 id="modal-project-title"
-                className="font-['IBM_Plex_Mono',monospace] font-bold text-2xl md:text-4xl text-white tracking-tight leading-tight"
+                className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-2xl md:text-4xl text-white tracking-tight leading-tight"
               >
                 {project.title}
               </h2>

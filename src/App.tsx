@@ -157,7 +157,7 @@ function HeroSection({ lang }: SectionProps) {
           <p className="text-sm font-semibold tracking-widest text-[#5b68f5] uppercase mb-4 font-['Inter',sans-serif]">
             {tHero.role}
           </p>
-          <h1 className="font-['IBM_Plex_Mono',monospace] font-bold text-5xl lg:text-6xl xl:text-7xl leading-[1.08] tracking-[0.02em] text-[#1c1b1b] mb-6">
+          <h1 className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-5xl lg:text-6xl xl:text-7xl leading-[1.08] tracking-[0.02em] text-[#1c1b1b] mb-6">
             {tHero.titleLine1}<br />
             {tHero.titleLine2}{" "}
             <span className="text-[#6822c9]">{tHero.titleHighlight}</span>
@@ -286,7 +286,7 @@ function ProjectsSection({ lang }: SectionProps) {
             <p className="text-sm font-semibold tracking-widest text-[#5b68f5] uppercase mb-2">
               {tProjects.badge}
             </p>
-            <h2 className="font-['IBM_Plex_Mono',monospace] font-bold text-4xl lg:text-5xl tracking-[0.03em] text-[#1c1b1b]">
+            <h2 className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-4xl lg:text-5xl tracking-[0.03em] text-[#1c1b1b]">
               {tProjects.title}
             </h2>
           </div>
@@ -420,7 +420,7 @@ function AboutSection({ lang }: SectionProps) {
           <p className="text-white/60 text-sm font-semibold tracking-widest uppercase mb-4">
             {tAbout.badge}
           </p>
-          <h2 className="font-['IBM_Plex_Mono',monospace] font-bold text-5xl lg:text-6xl tracking-[0.03em] text-white mb-8">
+          <h2 className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-5xl lg:text-6xl tracking-[0.03em] text-white mb-8">
             {tAbout.title}
           </h2>
           <div className="space-y-5 text-[#ccd4d4] text-lg leading-relaxed">
@@ -462,7 +462,7 @@ function AboutSection({ lang }: SectionProps) {
                 key={desc}
                 className="flex items-center gap-4 border-b border-white/10 pb-5 last:border-0 last:pb-0"
               >
-                <span className="font-['IBM_Plex_Mono',monospace] font-bold text-3xl text-white shrink-0 w-20">
+                <span className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-3xl text-white shrink-0 w-20">
                   {val}
                 </span>
                 <span className="text-white/70 text-sm leading-snug">{desc}</span>
@@ -484,7 +484,7 @@ function ContactSection({ lang }: SectionProps) {
         <p className="text-sm font-semibold tracking-widest text-[#5b68f5] uppercase mb-4">
           {tContact.badge}
         </p>
-        <h2 className="font-['IBM_Plex_Mono',monospace] font-bold text-4xl lg:text-5xl tracking-[0.02em] text-[#1c1b1b] mb-6 leading-tight">
+        <h2 className="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] font-bold text-4xl lg:text-5xl tracking-[0.02em] text-[#1c1b1b] mb-6 leading-tight">
           {tContact.titleLine1}<br />
           <span className="text-[#6822c9]">{tContact.titleHighlight}</span>
         </h2>
