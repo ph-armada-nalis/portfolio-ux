@@ -178,8 +178,6 @@ export const TRANSLATIONS = {
             "Pipeline de deploy automatizado via Cloudflare Pages conectado ao repositório GitHub",
             "Métricas de navegação ativas com Hotjar gerando dados para o backlog de melhorias da V2",
           ],
-          externalUrl: "https://pedroarmada.com.br/",
-          externalUrlLabel: "Explorar Portfólio ao Vivo",
           hasModal: true,
         },
         {
@@ -542,8 +540,6 @@ export const TRANSLATIONS = {
             "Automated CI/CD deployment pipeline on Cloudflare Pages connected directly to GitHub",
             "Live behavioral telemetry with Hotjar actively gathering navigation data to steer the V2 backlog",
           ],
-          externalUrl: "https://pedroarmada.com.br/",
-          externalUrlLabel: "Explore Live Portfolio",
           hasModal: true,
         },
         {
