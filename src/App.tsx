@@ -3,6 +3,7 @@ import { Download, ArrowUp, Sparkles } from "lucide-react";
 import imgProfile from "./imports/Frame1/9e02335baa9e73c98c7949947f1cfe368040d3d1.png";
 import imgSkoob from "./assets/skoob-cover.png";
 import imgDuolingo from "./assets/duolingo-cover.png";
+import imgPortfolio from "./assets/portfolio-cover.jpg";
 import SplashScreen from "./SplashScreen";
 import Timeline from "./Timeline";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -258,10 +259,11 @@ function ProjectsSection({ lang }: SectionProps) {
     };
   }, [activeProject, isAllProjectsOpen]);
 
-  const projectImages: (string | undefined)[] = [imgSkoob, imgDuolingo, undefined, undefined, undefined];
+  const projectImages: (string | undefined)[] = [imgSkoob, imgDuolingo, imgPortfolio, undefined, undefined, undefined];
   const projectColors = [
     "from-[#5b68f5] to-[#2b49aa]",
     "from-[#58cc02] to-[#2b49aa]",
+    "from-[#3957eb] to-[#0d1650]",
     "from-[#6822c9] to-[#2b49aa]",
     "from-[#2b49aa] to-[#151e87]",
     "from-[#10783b] to-[#2b49aa]",

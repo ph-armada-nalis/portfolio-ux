@@ -72,11 +72,11 @@ export const TRANSLATIONS = {
       items: [
         {
           id: "skoob",
-          title: "Redesign do Skoob",
+          title: "Redesign - Skoob",
           subtitle: "Pesquisa de Campo, Análise Qualitativa & Clube do Livro Assíncrono",
           description:
             "Pesquisa de campo e UX Design para transformar a experiência social do Skoob, criando a funcionalidade de clubes de leitura assíncronos.",
-          tags: ["UX Research", "UX Design", "Comunidades", "Figma"],
+          tags: ["Redesign", "UX Research", "UX Design", "Comunidades", "Figma"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -108,7 +108,7 @@ export const TRANSLATIONS = {
         },
         {
           id: "duolingo",
-          title: "Redesign do Onboarding Duolingo",
+          title: "Redesign - Onboarding do Duolingo",
           subtitle: "Análise de Fricção no Funil & Teste Remoto de Onboarding Enxuto",
           description:
             "Pesquisa de UX Analytics e proposta de redesign enxuto para reduzir o atrito e acelerar a conclusão da primeira lição no Duolingo.",
@@ -142,6 +142,42 @@ export const TRANSLATIONS = {
           ],
           externalUrl: "https://ph-armada-nalis.github.io/case-duolingo-onboarding/",
           externalUrlLabel: "Acessar Case Interativo",
+          hasModal: true,
+        },
+        {
+          id: "portfolio",
+          title: "Portfólio pessoal",
+          subtitle: "Discovery, FigJam, Prototipação no Figma, Antigravity AI & Analytics",
+          description:
+            "Case study sobre o processo de ideação, benchmarking, design system, desenvolvimento front-end com IA e mensuração de UX do meu portfólio profissional.",
+          tags: ["UX Design", "UX Research", "UI Design", "Product Design"],
+          role: "Product Designer & Front-end Developer",
+          period: "Outubro / 2026",
+          overview:
+            "Projetar para clientes é desafiador, mas ser o próprio cliente é um teste ainda maior: exige deixar o perfeccionismo de lado em prol da entrega de valor. Este case documenta o processo de ponta a ponta da construção do meu portfólio, desde a pesquisa de referências globais até o desenvolvimento de código e monitoramento de métricas de uso.",
+          challenge:
+            "Enfrentar o desafio de projetar para si mesmo sem paralisia por perfeccionismo. Era necessário definir uma arquitetura de informação clara e escaneável, selecionar os cases certos e transformar os protótipos visuais do Figma em uma aplicação web real, responsiva, rápida e bilíngue.",
+          solution:
+            "Estruturação do discovery e escopo no FigJam, criação de protótipos de alto contraste e tipografia acessível no Figma, desenvolvimento do código com o ecossistema Antigravity (React, Vite e Tailwind CSS), deploy contínuo via Cloudflare Pages e instrumentação analítica com Hotjar para evolução constante orientada a dados.",
+          methodology: [
+            "1. Discovery & Benchmarking: Análise de portfólios globais para mapear estruturas de arquitetura de informação e formatos mais eficazes.",
+            "2. Definição de Escopo no FigJam: Centralização de ideias, mapas mentais, curadoria de referências visuais e seleção dos cases estratégicos.",
+            "3. Prototipação no Figma: Foco em contraste visual, tipografia legível, escaneabilidade e experiência mobile/desktop responsiva.",
+            "4. Desenvolvimento com Antigravity: Engenharia ágil de componentes em React, suporte bilíngue (i18n), modais interativos e microinterações.",
+            "5. Deploy & Infraestrutura: Integração contínua (CI/CD) via Cloudflare Pages com alta performance e entrega em borda.",
+            "6. Analytics & Mensuração de UX: Integração com Hotjar para análise de mapas de calor (heatmaps), mapas de scroll e gravações de sessão para guiar a V2.",
+          ],
+          insights: [
+            "Exibir somente o visual sem contexto, desafios e decisões de design é pouco efetivo para recrutadores e clientes.",
+            "O FigJam é o melhor aliado contra o perfeccionismo: permitiu destravar o escopo e priorizar antes de abrir o Figma.",
+            "O trabalho de UX não encerra no deploy: dados comportamentais (heatmaps e scroll) tornam o portfólio um produto em evolução contínua.",
+          ],
+          results: [
+            "Aplicação web 100% responsiva, acessível e bilíngue (Português e Inglês)",
+            "Modais de cases aprofundados com arquitetura focada em leitura rápida e entregáveis",
+            "Pipeline de deploy automatizado via Cloudflare Pages conectado ao repositório GitHub",
+            "Métricas de navegação ativas com Hotjar gerando dados para o backlog de melhorias da V2",
+          ],
           hasModal: true,
         },
         {
@@ -398,11 +434,11 @@ export const TRANSLATIONS = {
       items: [
         {
           id: "skoob",
-          title: "Skoob Redesign",
+          title: "Redesign - Skoob",
           subtitle: "Field Research, Qualitative Analysis & Asynchronous Book Club",
           description:
             "UX Research and product design study transforming Skoob's social experience through asynchronous book club features.",
-          tags: ["UX Research", "UX Design", "Communities", "Figma"],
+          tags: ["Redesign", "UX Research", "UX Design", "Communities", "Figma"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -434,7 +470,7 @@ export const TRANSLATIONS = {
         },
         {
           id: "duolingo",
-          title: "Duolingo Onboarding Redesign",
+          title: "Redesign - Duolingo Onboarding",
           subtitle: "Funnel Friction Analysis & Remote A/B Testing of Lean Onboarding",
           description:
             "UX Analytics research and lean redesign proposal reducing friction and accelerating first lesson completion on Duolingo.",
@@ -468,6 +504,42 @@ export const TRANSLATIONS = {
           ],
           externalUrl: "https://ph-armada-nalis.github.io/case-duolingo-onboarding/",
           externalUrlLabel: "Access Interactive Case Study",
+          hasModal: true,
+        },
+        {
+          id: "portfolio",
+          title: "Personal Portfolio",
+          subtitle: "Discovery, FigJam Scoping, Figma Prototyping, Antigravity AI & Analytics",
+          description:
+            "Case study covering the ideation, global benchmarking, Figma design, AI-powered front-end development, and behavioral UX telemetry of my personal portfolio.",
+          tags: ["UX Design", "UX Research", "UI Design", "Product Design"],
+          role: "Product Designer & Front-end Developer",
+          period: "October / 2026",
+          overview:
+            "Designing for clients is challenging, but being your own client is a real test that forces you to leave perfectionism aside to deliver real value. This case study documents the end-to-end conception of my personal portfolio, from global benchmarking to full-stack code implementation and behavioral tracking.",
+          challenge:
+            "Overcoming the analysis paralysis of being one's own client. I needed to establish an intuitive, scannable information architecture, curate the right projects, and turn static Figma designs into a fast, fully responsive, bilingual web application.",
+          solution:
+            "Scoping and discovery synthesized in FigJam, high-contrast and accessible typography prototypes built in Figma, rapid component engineering powered by Antigravity (React, Vite, Tailwind CSS), automated deployment on Cloudflare Pages, and continuous telemetry using Hotjar to inform data-driven V2 iterations.",
+          methodology: [
+            "1. Discovery & Benchmarking: Analyzing global design portfolios to evaluate information architectures and effective presentation formats.",
+            "2. FigJam Scoping: Brainstorming ideas, visual moodboarding, and strategic selection of projects to feature.",
+            "3. Figma Prototyping: Crafting clear visual hierarchies, accessible typography, scannable layouts, and responsive desktop/mobile screens.",
+            "4. Development with Antigravity: AI-assisted front-end engineering in React, internationalization (PT/EN), fluid modal windows, and transitions.",
+            "5. Deployment & Infrastructure: Continuous delivery pipeline on Cloudflare Pages edge network with instant builds.",
+            "6. Analytics & UX Telemetry: Integrating Hotjar to track heatmaps, scroll depth, and user friction points for the future V2 roadmap.",
+          ],
+          insights: [
+            "Displaying only visual work without explaining problem context, trade-offs, and rationale provides little value to hiring teams.",
+            "FigJam is the best weapon against perfectionism: structuring scope first saved immense time before drawing pixels in Figma.",
+            "UX doesn't end at deployment: tracking behavioral metrics (heatmaps and scroll) transforms the portfolio into an evolving living product.",
+          ],
+          results: [
+            "Fully responsive, accessible, and bilingual web application (Portuguese and English)",
+            "Rich interactive project modals providing detailed case storytelling without page reloads",
+            "Automated CI/CD deployment pipeline on Cloudflare Pages connected directly to GitHub",
+            "Live behavioral telemetry with Hotjar actively gathering navigation data to steer the V2 backlog",
+          ],
           hasModal: true,
         },
         {
