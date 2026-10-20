@@ -72,11 +72,11 @@ export const TRANSLATIONS = {
       items: [
         {
           id: "skoob",
-          title: "Redesign do Skoob",
+          title: "Redesign - Skoob",
           subtitle: "Pesquisa de Campo, Análise Qualitativa & Clube do Livro Assíncrono",
           description:
             "Pesquisa de campo e UX Design para transformar a experiência social do Skoob, criando a funcionalidade de clubes de leitura assíncronos.",
-          tags: ["UX Research", "UX Design", "Comunidades", "Figma"],
+          tags: ["Redesign", "UX Research", "UX Design", "Comunidades", "Figma"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -108,7 +108,7 @@ export const TRANSLATIONS = {
         },
         {
           id: "duolingo",
-          title: "Redesign do Onboarding Duolingo",
+          title: "Redesign - Onboarding do Duolingo",
           subtitle: "Análise de Fricção no Funil & Teste Remoto de Onboarding Enxuto",
           description:
             "Pesquisa de UX Analytics e proposta de redesign enxuto para reduzir o atrito e acelerar a conclusão da primeira lição no Duolingo.",
@@ -146,11 +146,11 @@ export const TRANSLATIONS = {
         },
         {
           id: "portfolio",
-          title: "Concepção do Portfólio",
+          title: "Portfólio pessoal",
           subtitle: "Discovery, FigJam, Prototipação no Figma, Antigravity AI & Analytics",
           description:
             "Case study sobre o processo de ideação, benchmarking, design system, desenvolvimento front-end com IA e mensuração de UX do meu portfólio profissional.",
-          tags: ["Product Design", "UX/UI", "Antigravity", "Cloudflare"],
+          tags: ["UX Design", "UX Research", "UI Design", "Product Design"],
           role: "Product Designer & Front-end Developer",
           period: "Outubro / 2026",
           overview:
@@ -436,11 +436,11 @@ export const TRANSLATIONS = {
       items: [
         {
           id: "skoob",
-          title: "Skoob Redesign",
+          title: "Redesign - Skoob",
           subtitle: "Field Research, Qualitative Analysis & Asynchronous Book Club",
           description:
             "UX Research and product design study transforming Skoob's social experience through asynchronous book club features.",
-          tags: ["UX Research", "UX Design", "Communities", "Figma"],
+          tags: ["Redesign", "UX Research", "UX Design", "Communities", "Figma"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -472,7 +472,7 @@ export const TRANSLATIONS = {
         },
         {
           id: "duolingo",
-          title: "Duolingo Onboarding Redesign",
+          title: "Redesign - Duolingo Onboarding",
           subtitle: "Funnel Friction Analysis & Remote A/B Testing of Lean Onboarding",
           description:
             "UX Analytics research and lean redesign proposal reducing friction and accelerating first lesson completion on Duolingo.",
@@ -510,11 +510,11 @@ export const TRANSLATIONS = {
         },
         {
           id: "portfolio",
-          title: "Portfolio Conception & Build",
+          title: "Personal Portfolio",
           subtitle: "Discovery, FigJam Scoping, Figma Prototyping, Antigravity AI & Analytics",
           description:
             "Case study covering the ideation, global benchmarking, Figma design, AI-powered front-end development, and behavioral UX telemetry of my personal portfolio.",
-          tags: ["Product Design", "UX/UI", "Antigravity", "Cloudflare"],
+          tags: ["UX Design", "UX Research", "UI Design", "Product Design"],
           role: "Product Designer & Front-end Developer",
           period: "October / 2026",
           overview:
