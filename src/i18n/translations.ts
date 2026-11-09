@@ -368,7 +368,7 @@ export const TRANSLATIONS = {
       p1Line1: "Muito Prazer! Me chamo ",
       p1Name: "Pedro Henrique Armada Nalis",
       p1Line2:
-        ", tenho 22 anos e atuo como Product/UX Designer desde 2023, movido pela curiosidade e paixão de resolver problemas através do design.",
+        " e atuo como Product Designer desde 2023, movido pela curiosidade e paixão de resolver problemas através do design.",
       p2: "Sou formado em Sistemas de Informação e descobri a profissão durante a minha trajetória no curso, onde sempre tive um perfil mais analítico e visual, mas não muito forte com código, até descobrir que havia uma área que se encaixava perfeitamente comigo: UX/UI Design. Mergulhei de cabeça nos estudos e vi que ali era onde estava meu potencial, mas sem dispensar a bagagem que consegui com meu período na programação, visto que hoje ela me ajuda a tomar decisões melhores e me permite ter uma boa comunicação com times de desenvolvimento.",
       p3: "Pra além do trabalho, sempre gostei de ter diversos hobbies desde pequeno. Hoje no meu tempo livre, gosto muito de tocar baixo, ler livros e quadrinhos, ver filmes e jogar videogame. Não só são atividades que eu gosto muito, mas elas também me ajudam a estimular minha criatividade e minhas ideias.",
       viewLinkedIn: "Veja meu LinkedIn",
@@ -730,7 +730,7 @@ export const TRANSLATIONS = {
       p1Line1: "Pleased to meet you! My name is ",
       p1Name: "Pedro Henrique Armada Nalis",
       p1Line2:
-        ", I am a 22-year-old Product/UX Designer acting since 2023, driven by curiosity and passion for solving complex problems through design.",
+        " and I have been working as a Product Designer since 2023, driven by curiosity and passion for solving complex problems through design.",
       p2: "I hold a degree in Information Systems, where I discovered UX/UI Design during my academic journey. With an analytical and visual mindset, I realized design was where my full potential lay — while leveraging my programming background to make better design decisions and communicate seamlessly with development teams.",
       p3: "Beyond work, I love exploring diverse creative hobbies. In my free time, I enjoy playing bass guitar, reading books and comics, watching movies, and gaming. These activities inspire my creativity and refresh my perspective.",
       viewLinkedIn: "My LinkedIn",
