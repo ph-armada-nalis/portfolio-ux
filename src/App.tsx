@@ -351,7 +351,21 @@ function ProjectsSection({ lang }: SectionProps) {
                     >
                       {p.title}
                     </h3>
-                    <p className="text-[#494a4c] text-sm leading-relaxed mb-5 line-clamp-3">{p.description}</p>
+                    <p className="text-[#494a4c] text-sm leading-relaxed mb-3 line-clamp-2">{p.description}</p>
+
+                    {/* Métricas e Conquistas do Projeto */}
+                    {p.metrics && p.metrics.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 mb-5">
+                        {p.metrics.map((m, mIdx) => (
+                          <span
+                            key={mIdx}
+                            className="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-lg bg-[#eef2ff] text-[#2b49aa] border border-[#c7d2fe]/70"
+                          >
+                            {m}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                   {canOpenModal ? (

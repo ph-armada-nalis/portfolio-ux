@@ -137,9 +137,23 @@ export default function AllProjectsModal({
                     >
                       {p.title}
                     </h3>
-                    <p className="text-[#494a4c] text-xs leading-relaxed mb-4 line-clamp-3">
+                    <p className="text-[#494a4c] text-xs leading-relaxed mb-2.5 line-clamp-2">
                       {p.description}
                     </p>
+
+                    {/* Métricas e Conquistas do Projeto */}
+                    {p.metrics && p.metrics.length > 0 && (
+                      <div className="flex flex-wrap gap-1 mb-4">
+                        {p.metrics.map((m, mIdx) => (
+                          <span
+                            key={mIdx}
+                            className="inline-flex items-center text-[11px] font-semibold px-2 py-0.5 rounded-md bg-[#eef2ff] text-[#2b49aa] border border-[#c7d2fe]/70"
+                          >
+                            {m}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                   {canOpenModal ? (
