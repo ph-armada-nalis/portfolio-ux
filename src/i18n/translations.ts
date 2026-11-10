@@ -6,6 +6,7 @@ export interface ProjectTranslation {
   subtitle?: string;
   description: string;
   tags: string[];
+  metrics?: string[];
   role?: string;
   period?: string;
   overview?: string;
@@ -77,6 +78,7 @@ export const TRANSLATIONS = {
           description:
             "Pesquisa de campo e UX Design para transformar a experiência social do Skoob, criando a funcionalidade de clubes de leitura assíncronos.",
           tags: ["Redesign", "UX Research", "UX Design", "Comunidades", "Figma"],
+          metrics: ["Clube Assíncrono", "+ Retenção estimada", "Pesquisa 24-45 anos"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -113,6 +115,7 @@ export const TRANSLATIONS = {
           description:
             "Pesquisa de UX Analytics e proposta de redesign enxuto para reduzir o atrito e acelerar a conclusão da primeira lição no Duolingo.",
           tags: ["UX Research", "UX Design", "Redesign", "Design System"],
+          metrics: ["-44% tempo na 1ª lição", "26 → 20 telas", "24% pularam nivelamento"],
           role: "UX Analyst & Product Designer",
           period: "Outubro / 2026",
           overview:
@@ -151,6 +154,7 @@ export const TRANSLATIONS = {
           description:
             "Case study sobre o processo de ideação, benchmarking, design system, desenvolvimento front-end com IA e mensuração de UX do meu portfólio profissional.",
           tags: ["UX Design", "UX Research", "UI Design", "Product Design"],
+          metrics: ["100% Responsivo", "Bilíngue (PT/EN)", "Telemetria Hotjar"],
           role: "Product Designer & Front-end Developer",
           period: "Outubro / 2026",
           overview:
@@ -187,6 +191,7 @@ export const TRANSLATIONS = {
           description:
             "Fluxo conversacional para uma grande rede de farmácias, cujo objetivo era automatizar a jornada dos clientes e reduzir o TMA.",
           tags: ["UX Design", "Chatbots", "Design Conversacional"],
+          metrics: ["-60% no TMA", "+70% automação de dúvidas"],
           role: "UX/UI Designer & Conversational Designer",
           period: "2024",
           overview:
@@ -209,6 +214,7 @@ export const TRANSLATIONS = {
           description:
             "Criação de um agente de IA focado em apoiar novos colaboradores no processo de Onboarding de uma empresa.",
           tags: ["IA Generativa", "UX Design", "Agentes de IA"],
+          metrics: ["Destaque Hackathon", "Gemini AI First"],
           role: "UX Designer & Desenvolvedor do Agente",
           period: "2025",
           overview:
@@ -231,6 +237,7 @@ export const TRANSLATIONS = {
           description:
             "Concepção 0 to 1 da plataforma web para centralizar a gestão de hackathons, inscrições, formação de equipes e bancas examinadoras.",
           tags: ["Product Design", "Design System", "Plataforma Web"],
+          metrics: ["0 to 1 em 4 meses", "100% fluxos digitais"],
           role: "Product Designer",
           period: "12/2024 – 03/2025",
           overview:
@@ -439,6 +446,7 @@ export const TRANSLATIONS = {
           description:
             "UX Research and product design study transforming Skoob's social experience through asynchronous book club features.",
           tags: ["Redesign", "UX Research", "UX Design", "Communities", "Figma"],
+          metrics: ["Async Book Club", "+ Estimated retention", "User Research (24-45y)"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -475,6 +483,7 @@ export const TRANSLATIONS = {
           description:
             "UX Analytics research and lean redesign proposal reducing friction and accelerating first lesson completion on Duolingo.",
           tags: ["UX Research", "UX Design", "Redesign", "Design System"],
+          metrics: ["-44% time to 1st lesson", "26 → 20 screens", "24% skipped placement"],
           role: "UX Analyst & Product Designer",
           period: "October / 2026",
           overview:
@@ -513,6 +522,7 @@ export const TRANSLATIONS = {
           description:
             "Case study covering the ideation, global benchmarking, Figma design, AI-powered front-end development, and behavioral UX telemetry of my personal portfolio.",
           tags: ["UX Design", "UX Research", "UI Design", "Product Design"],
+          metrics: ["100% Responsive", "Bilingual (PT/EN)", "Hotjar Telemetry"],
           role: "Product Designer & Front-end Developer",
           period: "October / 2026",
           overview:
@@ -549,6 +559,7 @@ export const TRANSLATIONS = {
           description:
             "Conversational flow for a major pharmacy chain to automate customer journeys and reduce average handle time.",
           tags: ["UX Design", "Chatbots", "Conversational Design"],
+          metrics: ["-60% avg handle time", "70%+ automation"],
           role: "UX/UI Designer & Conversational Designer",
           period: "2024",
           overview:
@@ -571,6 +582,7 @@ export const TRANSLATIONS = {
           description:
             "AI Agent designed to assist new hires during the corporate employee onboarding process.",
           tags: ["Generative AI", "UX Design", "AI Agents"],
+          metrics: ["Hackathon Award", "Gemini AI First"],
           role: "UX Designer & Agent Developer",
           period: "2025",
           overview:
@@ -593,6 +605,7 @@ export const TRANSLATIONS = {
           description:
             "End-to-end 0 to 1 web platform design to centralize hackathons, registrations, team formation, and jury evaluation.",
           tags: ["Product Design", "Design System", "Web Platform"],
+          metrics: ["0 to 1 in 4 months", "100% digital flows"],
           role: "Product Designer",
           period: "12/2024 – 03/2025",
           overview:
