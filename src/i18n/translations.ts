@@ -78,7 +78,7 @@ export const TRANSLATIONS = {
           description:
             "Pesquisa de campo e UX Design para transformar a experiência social do Skoob, criando a funcionalidade de clubes de leitura assíncronos.",
           tags: ["Redesign", "UX Research", "UX Design", "Comunidades", "Figma"],
-          metrics: ["Clube Assíncrono", "+ Retenção estimada", "Pesquisa 24-45 anos"],
+          metrics: ["+ Retenção e tempo no app", "Fim do \"efeito Netflix\"", "Troca social sem pressão de agenda"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -100,10 +100,10 @@ export const TRANSLATIONS = {
             "A experiência comunitária se torna mais rica quando prioriza o círculo social próximo (redes de confiança).",
           ],
           results: [
-            "Conclusão Estratégica: A oportunidade do Skoob é transformar-se em uma plataforma de conexão assíncrona baseada em redes de confiança.",
-            "Arquitetura de Clubes de Leitura Assíncronos por metas de capítulos e alertas de spoiler",
-            "Criação do fluxo completo de UX/UI e protótipo navegável de alta fidelidade no Figma",
-            "Aumento da taxa de retenção estimada e engajamento contínuo de leitores no aplicativo",
+            "Valor para o Produto (Skoob): Aumento orgânico na retenção e no tempo de permanência no app, além do fortalecimento da rede de contatos no ecossistema da plataforma.",
+            "Valor para o Usuário: Eliminação do \"efeito Netflix\" na escolha de livros, redução da fricção no onboarding e ambiente de troca social leve sem pressão de agenda.",
+            "Hipótese Refinada: O engajamento se dá por trocas assíncronas no ritmo do leitor e focadas no círculo social primário (amigos e família), e não em encontros síncronos com desconhecidos.",
+            "Arquitetura completa de Clubes de Leitura Assíncronos por metas de capítulos, alertas de spoiler e protótipo navegável de alta fidelidade no Figma.",
           ],
           behanceUrl: "https://www.behance.net/gallery/254848485/Redesign-Skoob",
           hasModal: true,
@@ -446,7 +446,7 @@ export const TRANSLATIONS = {
           description:
             "UX Research and product design study transforming Skoob's social experience through asynchronous book club features.",
           tags: ["Redesign", "UX Research", "UX Design", "Communities", "Figma"],
-          metrics: ["Async Book Club", "+ Estimated retention", "User Research (24-45y)"],
+          metrics: ["+ Retention & app screen time", "Eliminating \"Netflix effect\"", "Zero schedule pressure"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -468,10 +468,10 @@ export const TRANSLATIONS = {
             "Community experience is richer when prioritizing users' primary social circles of trust.",
           ],
           results: [
-            "Strategic Conclusion: Skoob's opportunity is transforming into an asynchronous trust-network connection platform.",
-            "Asynchronous Book Club architecture with chapter goals and spoiler alerts",
-            "End-to-end UX/UI flow & high-fidelity interactive prototype in Figma",
-            "Increased estimated retention and continuous reader engagement",
+            "Value for Product (Skoob): Organic increase in user retention and in-app screen time, strengthening existing social networks within the ecosystem.",
+            "Value for Users: Elimination of the \"Netflix effect\" when picking books, reduced onboarding friction, and a lightweight social discussion space with zero schedule pressure.",
+            "Refined Hypothesis: Long-term engagement thrives through asynchronous discussions paced by chapter goals within primary social circles (friends and family).",
+            "End-to-end Asynchronous Book Club UX/UI architecture, spoiler alert system, and high-fidelity interactive Figma prototype.",
           ],
           behanceUrl: "https://www.behance.net/gallery/254848485/Redesign-Skoob",
           hasModal: true,
