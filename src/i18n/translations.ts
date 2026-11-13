@@ -78,7 +78,7 @@ export const TRANSLATIONS = {
           description:
             "Pesquisa de campo e UX Design para transformar a experiência social do Skoob, criando a funcionalidade de clubes de leitura assíncronos.",
           tags: ["Redesign", "UX Research", "UX Design", "Comunidades", "Figma"],
-          metrics: ["+ Retenção e tempo no app", "Fim do \"efeito Netflix\"", "Troca social sem pressão de agenda"],
+          metrics: ["+ Retenção orgânica", "Validação de hipótese"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
@@ -446,7 +446,7 @@ export const TRANSLATIONS = {
           description:
             "UX Research and product design study transforming Skoob's social experience through asynchronous book club features.",
           tags: ["Redesign", "UX Research", "UX Design", "Communities", "Figma"],
-          metrics: ["+ Retention & app screen time", "Eliminating \"Netflix effect\"", "Zero schedule pressure"],
+          metrics: ["+ Organic retention", "Hypothesis validation"],
           role: "UX Researcher & Product Designer",
           period: "2024",
           overview:
