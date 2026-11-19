@@ -83,8 +83,8 @@ export const TRANSLATIONS = {
           subtitle: "Arquitetura de Informação, Pesquisa Qualitativa & Design de Conteúdo com IA",
           description:
             "Reestruturação taxonômica e redesign do e-commerce O Boticário centrados em 3 contextos de compra, auditoria de 45 itens e IA generativa consultiva.",
-          tags: ["Arquitetura de Informação", "E-commerce", "UX Research", "IA Generativa", "Figma"],
-          metrics: ["3 contextos de compra", "45 itens auditados", "Taxonomia & IA"],
+          tags: ["Arquitetura de Informação", "Design de Conteúdo", "UX Research", "IA Generativa"],
+          metrics: ["E-Commerce", "45 itens auditados", "Taxonomia & IA"],
           role: "UX Researcher & Information Architect (Listagens, PLP e Entrevistas) • Grupo 5 MBA Infnet",
           period: "Novembro / 2026",
           overview:
@@ -502,8 +502,8 @@ export const TRANSLATIONS = {
           subtitle: "Information Architecture, Qualitative Research & AI Content Design",
           description:
             "Taxonomic restructuring and e-commerce redesign for O Boticário centered on 3 purchasing contexts, 45-item audit, and consultative generative AI.",
-          tags: ["Information Architecture", "E-commerce", "UX Research", "Generative AI", "Figma"],
-          metrics: ["3 purchase contexts", "45 audited items", "Taxonomy & AI"],
+          tags: ["Information Architecture", "Content Design", "UX Research", "Generative AI"],
+          metrics: ["E-Commerce", "45 audited items", "Taxonomy & AI"],
           role: "UX Researcher & Information Architect (Listings, PLP & Interviews) • Infnet MBA Group 5",
           period: "November / 2026",
           overview:
