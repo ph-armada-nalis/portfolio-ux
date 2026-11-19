@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Download, ArrowUp, Sparkles } from "lucide-react";
 import imgProfile from "./imports/Frame1/9e02335baa9e73c98c7949947f1cfe368040d3d1.png";
+import imgBoticario from "./assets/boticario-cover.png";
 import imgSkoob from "./assets/skoob-cover.png";
 import imgDuolingo from "./assets/duolingo-cover.png";
 import imgPortfolio from "./assets/portfolio-cover.jpg";
@@ -259,13 +260,20 @@ function ProjectsSection({ lang }: SectionProps) {
     };
   }, [activeProject, isAllProjectsOpen]);
 
-  const projectImages: (string | undefined)[] = [imgSkoob, imgDuolingo, imgPortfolio, undefined, undefined, undefined];
+  const projectImages: (string | undefined)[] = [
+    imgBoticario,
+    imgDuolingo,
+    imgPortfolio,
+    imgSkoob,
+    undefined,
+    undefined,
+  ];
   const projectColors = [
-    "from-[#5b68f5] to-[#2b49aa]",
+    "from-[#1c1b1b] to-[#494a4c]",
     "from-[#58cc02] to-[#2b49aa]",
     "from-[#3957eb] to-[#0d1650]",
+    "from-[#5b68f5] to-[#2b49aa]",
     "from-[#6822c9] to-[#2b49aa]",
-    "from-[#2b49aa] to-[#151e87]",
     "from-[#10783b] to-[#2b49aa]",
   ];
 

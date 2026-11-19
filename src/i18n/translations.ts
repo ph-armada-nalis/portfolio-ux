@@ -1,5 +1,10 @@
 export type Language = "pt" | "en";
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
+
 export interface ProjectTranslation {
   id: string;
   title: string;
@@ -18,6 +23,7 @@ export interface ProjectTranslation {
   behanceUrl?: string;
   externalUrl?: string;
   externalUrlLabel?: string;
+  links?: ProjectLink[];
   hasModal?: boolean;
 }
 
@@ -72,40 +78,54 @@ export const TRANSLATIONS = {
       viewAllBehance: "Ver todos os projetos no Behance",
       items: [
         {
-          id: "skoob",
-          title: "Redesign - Skoob",
-          subtitle: "Pesquisa de Campo, Análise Qualitativa & Clube do Livro Assíncrono",
+          id: "boticario",
+          title: "Redesign - E-commerce O Boticário",
+          subtitle: "Arquitetura de Informação, Pesquisa Qualitativa & Design de Conteúdo com IA",
           description:
-            "Pesquisa de campo e UX Design para transformar a experiência social do Skoob, criando a funcionalidade de clubes de leitura assíncronos.",
-          tags: ["Redesign", "UX Research", "UX Design", "Comunidades", "Figma"],
-          metrics: ["+ Retenção orgânica", "Validação de hipótese"],
-          role: "UX Researcher & Product Designer",
-          period: "2024",
+            "Reestruturação taxonômica e redesign do e-commerce O Boticário centrados em 3 contextos de compra, auditoria de 45 itens e IA generativa consultiva.",
+          tags: ["Arquitetura de Informação", "E-commerce", "UX Research", "IA Generativa", "Figma"],
+          metrics: ["3 contextos de compra", "45 itens auditados", "Taxonomia & IA"],
+          role: "UX Researcher & Information Architect (Listagens, PLP e Entrevistas) • Grupo 5 MBA Infnet",
+          period: "Novembro / 2026",
           overview:
-            "Estudo aprofundado de UX Research focado no comportamento de leitores assíduos do Skoob. Identificamos que a plataforma é utilizada primariamente como estante/registro virtual, mas que o engajamento social migra para WhatsApp, Instagram e TikTok. A partir dessa dor, projetamos o recurso de Clubes do Livro Assíncronos por metas e capítulos.",
+            "Redesign estratégico da experiência do e-commerce de O Boticário desenvolvido no MBA de Design de Conteúdo e Arquitetura de Informação com IA (Infnet) pelo Grupo 5. O projeto partiu da constatação de que cosméticos e perfumaria exigem modelos mentais específicos de experimentação, organizando a experiência em 3 contextos centrais de compra: Produto Conhecido (busca rápida e reposição), Presente (orientação por ocasião e preço com troca fácil) e Produto Desconhecido (apoio sensorial, avaliações reais e guias consultivos com IA).",
           challenge:
-            "Os usuários sofriam com a desorganização de grupos no WhatsApp (mensagens importantes perdidas rapidamente) e a rigidez de encontros síncronos ao vivo com hora marcada, incompatíveis com rotinas corridas. O Skoob não oferecia recursos para conversas estruturadas e sem spoilers.",
+            "O inventário de 45 itens do site revelou gargalos críticos: 1.078 páginas órfãs no mapa do site (passivo de SEO e governança), filtros fragmentados em dois lugares concorrentes nas listagens de produtos, descrições técnicas de notas olfativas sem tradução sensorial acessível, fricção e inversão de etapas no carrinho (pesquisa de frete antes da lista de itens) e hesitação acentuada de consumidoras negras na escolha de subtom de base devido à carência de fotos reais sem tratamento.",
           solution:
-            "Estruturação de pesquisa qualitativa semiestruturada remota (entrevistas em profundidade com leitores de 24 a 45 anos), desenvolvimento de Proto Personas (Júlia - 24 anos e Silvia - 45 anos), Matriz CSD e Mapa de Afinidade no FigJam. Desenhamos a funcionalidade de Clubes do Livro Assíncronos por metas de capítulos com fóruns de debate por tópico.",
+            "Condução de 9 entrevistas qualitativas semiestruturadas com usuários reais (frente própria com foco em hábitos de recompra, fragilidade logística e barreiras de tons de pele), auditoria de conteúdo por patologias de AI, card sorting aberto com 7 sessões (38 cartões), reestruturação do sitegrama e fluxo transacional, wireframes de média fidelidade (6 telas do catálogo ao checkout) e proposta visual de alta fidelidade no Figma integrada a recursos de IA generativa consultiva (Guia de Fragrâncias por linguagem natural, Provador Virtual de tons e resumos inteligentes de reviews com PNL).",
           methodology: [
-            "Entrevistas Qualitativas Semiestruturadas (Amostra de 24 a 45 anos)",
-            "Matriz CSD (Certezas, Suposições e Dúvidas)",
-            "Proto Personas, Proto Jornadas e Mapa de Empatia (Persona Mariana)",
-            "Mapa de Afinidade & Análise Temática de Dores",
-            "Mapeamento de Jornada do Usuário & User Stories",
+            "Entrevistas Qualitativas Semiestruturadas: 9 entrevistas com foco em canais de compra, receios com perfumes/maquiagens e fricções no funil (frente com Gabriela Pacheco e Monique Neves).",
+            "Inventário de Conteúdo & Auditoria de Patologias: 45 itens catalogados em 5 áreas do site, identificando lacunas, sobreposição de filtros, obsolescência e 1.078 páginas órfãs (frente responsável por Listagens e Busca).",
+            "Card Sorting Aberto: 7 sessões com 38 cartões de taxonomia real para revelar modelos mentais espontâneos de categorização, sustentabilidade e benefícios.",
+            "Sitegrama & Fluxo de Transação: Reestruturação do megamenu, redução da sobrecarga cognitiva e fluxo de checkout unificado em 3 etapas transparentes.",
+            "Wireframes de Média Fidelidade (6 Telas): Home, Busca/Listagem unificada, Página de Produto (PDP), Sacola limpa, Checkout de 1 tela e Confirmação/Rastreio em tempo real.",
+            "Design de Alta Fidelidade & IA Generativa Consultiva no Figma: Guia de Fragrâncias por linguagem natural, provador inclusivo de tons de base e resumos de reviews com PNL.",
           ],
           insights: [
-            "O Skoob é usado pra registrar leituras, mas os usuários sempre saem do app na hora de conversar e socializar.",
-            "Discussões precisam ser assíncronas por capítulos, permitindo trocas profundas sem a obrigação de reuniões ao vivo.",
-            "A experiência comunitária se torna mais rica quando prioriza o círculo social próximo (redes de confiança).",
+            "Consumidoras negras enfrentavam enorme barreira de confiança para identificar seu subtom de base online sem fotos reais e sem tratamento excessivo.",
+            "Filtros duplicados nas listagens e produtos abaixo de banners pesados aumentavam o tempo de busca e a sobrecarga cognitiva na navegação.",
+            "Ao presentear ou repor produtos, a clareza sobre retirada rápida em loja física (em até 2h) e facilidade de troca pesam mais que descontos agressivos.",
           ],
           results: [
-            "Valor para o Produto (Skoob): Aumento orgânico na retenção e no tempo de permanência no app, além do fortalecimento da rede de contatos no ecossistema da plataforma.",
-            "Valor para o Usuário: Eliminação do \"efeito Netflix\" na escolha de livros, redução da fricção no onboarding e ambiente de troca social leve sem pressão de agenda.",
-            "Hipótese Refinada: O engajamento se dá por trocas assíncronas no ritmo do leitor e focadas no círculo social primário (amigos e família), e não em encontros síncronos com desconhecidos.",
-            "Arquitetura completa de Clubes de Leitura Assíncronos por metas de capítulos, alertas de spoiler e protótipo navegável de alta fidelidade no Figma.",
+            "Frente de Listagens e Busca: Unificação completa dos filtros em painel único lateral com atualização imediata e produtos no topo da página.",
+            "Pesquisa e Escuta Ativa: Entrevistas com Gabriela e Monique fundamentaram diretrizes de inclusão étnica (galeria de peles reais) e logística segura contra quebra de produtos.",
+            "Governança de Conteúdo & SEO: Framework de 4 etapas para ciclo de vida de campanhas, prevendo expurgo de 1.078 páginas órfãs e redirecionamento 301 automático.",
+            "Entrega Integrada no Figma & FigJam: Mapeamento completo de pesquisa, matriz de fricções, wireframes, protótipo navegável em alta fidelidade e roadmap de implantação em 3 fases.",
           ],
-          behanceUrl: "https://www.behance.net/gallery/254848485/Redesign-Skoob",
+          links: [
+            {
+              label: "Acessar FigJam do Projeto",
+              url: "https://www.figma.com/board/VzTl6NR6smdItGjusjidKU/Projeto---Arquitetura-de-Informa%C3%A7%C3%A3o?node-id=0-1",
+            },
+            {
+              label: "Acessar Figma do Redesign",
+              url: "https://www.figma.com/design/YqDKTm3I6dEoKec16hwDUp/Redesign-Botic%C3%A1rio?node-id=1-516",
+            },
+            {
+              label: "Pasta no Google Drive",
+              url: "https://drive.google.com/drive/u/0/folders/1lPg5JQavrfIX554jwSAKZPV6YZSdBV4r",
+            },
+          ],
           hasModal: true,
         },
         {
@@ -182,6 +202,43 @@ export const TRANSLATIONS = {
             "Pipeline de deploy automatizado via Cloudflare Pages conectado ao repositório GitHub",
             "Métricas de navegação ativas com Hotjar gerando dados para o backlog de melhorias da V2",
           ],
+          hasModal: true,
+        },
+        {
+          id: "skoob",
+          title: "Redesign - Skoob",
+          subtitle: "Pesquisa de Campo, Análise Qualitativa & Clube do Livro Assíncrono",
+          description:
+            "Pesquisa de campo e UX Design para transformar a experiência social do Skoob, criando a funcionalidade de clubes de leitura assíncronos.",
+          tags: ["Redesign", "UX Research", "UX Design", "Comunidades", "Figma"],
+          metrics: ["+ Retenção orgânica", "Validação de hipótese"],
+          role: "UX Researcher & Product Designer",
+          period: "2024",
+          overview:
+            "Estudo aprofundado de UX Research focado no comportamento de leitores assíduos do Skoob. Identificamos que a plataforma é utilizada primariamente como estante/registro virtual, mas que o engajamento social migra para WhatsApp, Instagram e TikTok. A partir dessa dor, projetamos o recurso de Clubes do Livro Assíncronos por metas e capítulos.",
+          challenge:
+            "Os usuários sofriam com a desorganização de grupos no WhatsApp (mensagens importantes perdidas rapidamente) e a rigidez de encontros síncronos ao vivo com hora marcada, incompatíveis com rotinas corridas. O Skoob não oferecia recursos para conversas estruturadas e sem spoilers.",
+          solution:
+            "Estruturação de pesquisa qualitativa semiestruturada remota (entrevistas em profundidade com leitores de 24 a 45 anos), desenvolvimento de Proto Personas (Júlia - 24 anos e Silvia - 45 anos), Matriz CSD e Mapa de Afinidade no FigJam. Desenhamos a funcionalidade de Clubes do Livro Assíncronos por metas de capítulos com fóruns de debate por tópico.",
+          methodology: [
+            "Entrevistas Qualitativas Semiestruturadas (Amostra de 24 a 45 anos)",
+            "Matriz CSD (Certezas, Suposições e Dúvidas)",
+            "Proto Personas, Proto Jornadas e Mapa de Empatia (Persona Mariana)",
+            "Mapa de Afinidade & Análise Temática de Dores",
+            "Mapeamento de Jornada do Usuário & User Stories",
+          ],
+          insights: [
+            "O Skoob é usado pra registrar leituras, mas os usuários sempre saem do app na hora de conversar e socializar.",
+            "Discussões precisam ser assíncronas por capítulos, permitindo trocas profundas sem a obrigação de reuniões ao vivo.",
+            "A experiência comunitária se torna mais rica quando prioriza o círculo social próximo (redes de confiança).",
+          ],
+          results: [
+            "Valor para o Produto (Skoob): Aumento orgânico na retenção e no tempo de permanência no app, além do fortalecimento da rede de contatos no ecossistema da plataforma.",
+            "Valor para o Usuário: Eliminação do \"efeito Netflix\" na escolha de livros, redução da fricção no onboarding e ambiente de troca social leve sem pressão de agenda.",
+            "Hipótese Refinada: O engajamento se dá por trocas assíncronas no ritmo do leitor e focadas no círculo social primário (amigos e família), e não em encontros síncronos com desconhecidos.",
+            "Arquitetura completa de Clubes de Leitura Assíncronos por metas de capítulos, alertas de spoiler e protótipo navegável de alta fidelidade no Figma.",
+          ],
+          behanceUrl: "https://www.behance.net/gallery/254848485/Redesign-Skoob",
           hasModal: true,
         },
         {
@@ -440,40 +497,54 @@ export const TRANSLATIONS = {
       viewAllBehance: "View all projects on Behance",
       items: [
         {
-          id: "skoob",
-          title: "Redesign - Skoob",
-          subtitle: "Field Research, Qualitative Analysis & Asynchronous Book Club",
+          id: "boticario",
+          title: "Redesign - O Boticário E-commerce",
+          subtitle: "Information Architecture, Qualitative Research & AI Content Design",
           description:
-            "UX Research and product design study transforming Skoob's social experience through asynchronous book club features.",
-          tags: ["Redesign", "UX Research", "UX Design", "Communities", "Figma"],
-          metrics: ["+ Organic retention", "Hypothesis validation"],
-          role: "UX Researcher & Product Designer",
-          period: "2024",
+            "Taxonomic restructuring and e-commerce redesign for O Boticário centered on 3 purchasing contexts, 45-item audit, and consultative generative AI.",
+          tags: ["Information Architecture", "E-commerce", "UX Research", "Generative AI", "Figma"],
+          metrics: ["3 purchase contexts", "45 audited items", "Taxonomy & AI"],
+          role: "UX Researcher & Information Architect (Listings, PLP & Interviews) • Infnet MBA Group 5",
+          period: "November / 2026",
           overview:
-            "In-depth UX research study examining avid reader behavior on Skoob. We discovered that while users register books on Skoob, social discussions bleed into WhatsApp, Instagram, and TikTok. Based on this friction, we designed an Asynchronous Book Club feature with chapter goals.",
+            "Strategic e-commerce redesign for O Boticário developed as part of the Infnet MBA in Content Design & Information Architecture with AI by Group 5. Recognizing that beauty and fragrance require distinct mental models of sensory trial, we organized the journey around 3 core purchase contexts: Known Product (rapid search & replenishment), Gift (occasion and budget guidance with easy returns), and Unknown Product (sensory translation, authentic reviews, and consultative AI guides).",
           challenge:
-            "Readers struggled with disorganized WhatsApp groups (where key messages got lost quickly) and rigid live scheduled meetings incompatible with busy routines. Skoob lacked structured, spoiler-free discussion spaces.",
+            "An audit of 45 site items identified severe content and architectural pain points: 1,078 orphan landing pages cluttering the sitemap, duplicate filter mechanisms across product listings, technical fragrance notes lacking accessible sensory translation, checkout friction (shipping calculator appearing before cart items), and hesitation among Black consumers finding foundation undertones due to lack of unfiltered real-skin imagery.",
           solution:
-            "Qualitative research with remote video interviews (participants aged 24-45), Proto Personas, CSD Matrix, and Affinity Mapping in FigJam. We designed an Asynchronous Book Club experience with chapter goals and topic-focused discussion forums.",
+            "Conducted 9 in-depth qualitative interviews (direct front exploring repurchase habits, logistics fragility, and undertone barriers), 45-item content audit across AI pathologies, open card sorting with 7 sessions (38 taxonomy cards), complete sitemap and transaction flow restructuring, mid-fi wireframes (6 key screens from discovery to checkout), and a high-fidelity Figma redesign integrated with consultative GenAI features (natural language Fragrance Guide, Virtual Foundation Shade Matcher, and NLP-driven review highlights).",
           methodology: [
-            "Semi-Structured Qualitative Interviews (Participants aged 24-45)",
-            "CSD Matrix (Certainties, Suppositions, Doubts)",
-            "Proto Personas, Proto Journeys & Empathy Map (Persona Mariana)",
-            "Affinity Mapping & Thematic Pain Point Analysis",
-            "User Journey Mapping & User Stories",
+            "Semi-Structured Qualitative Interviews: 9 in-depth user interviews mapping buying habits, sensory hesitation, and checkout drop-offs (front interviewing Gabriela Pacheco & Monique Neves).",
+            "Content Inventory & Architectural Audit: 45 items audited across 5 site zones, diagnosing gaps, filter redundancy, obsolescence, and 1,078 orphan URLs (front responsible for Product Listings & Search).",
+            "Open Card Sorting: 7 sessions using 38 real taxonomy cards uncovering user mental models around beauty categories, sustainability, and loyalty perks.",
+            "Sitemap & Transaction Flow: Streamlined megamenu hierarchy, consolidated product departments, and end-to-end purchasing workflow.",
+            "Mid-Fidelity Wireframes (6 Screens): Home, unified Search/PLP, sensory PDP, streamlined Cart, 3-step single-screen Checkout, and Real-time Tracking.",
+            "High-Fidelity Figma UI & Consultative GenAI: Natural language fragrance matcher, inclusive skin undertone selector, and NLP-powered review summaries.",
           ],
           insights: [
-            "Users open Skoob to record books, but leave the app to socialize on external platforms.",
-            "Discussions must be asynchronous by chapter, enabling deep exchanges without mandatory live calls.",
-            "Community experience is richer when prioritizing users' primary social circles of trust.",
+            "Black women faced substantial friction finding accurate foundation shades online due to airbrushed photos lacking realistic skin textures.",
+            "Duplicate filtering mechanisms on product listing pages and oversized promotional banners delayed discovery and fatigued users.",
+            "When gifting or replenishing items, rapid 2-hour physical store pickup and transparent return policies outperformed aggressive discount gimmicks.",
           ],
           results: [
-            "Value for Product (Skoob): Organic increase in user retention and in-app screen time, strengthening existing social networks within the ecosystem.",
-            "Value for Users: Elimination of the \"Netflix effect\" when picking books, reduced onboarding friction, and a lightweight social discussion space with zero schedule pressure.",
-            "Refined Hypothesis: Long-term engagement thrives through asynchronous discussions paced by chapter goals within primary social circles (friends and family).",
-            "End-to-end Asynchronous Book Club UX/UI architecture, spoiler alert system, and high-fidelity interactive Figma prototype.",
+            "Listings & Search Front: Complete consolidation of redundant filters into a single lateral panel with instant query reactivity and immediate product visibility.",
+            "Qualitative Insights Implementation: Real-skin community galleries and fragility-proof logistics developed directly from interview feedback.",
+            "Content Governance & SEO Hygiene: 4-stage lifecycle framework proposed to purge 1,078 orphan URLs with automated 301 redirects to perennial categories.",
+            "Collaborative Artifacts Delivered: Comprehensive FigJam research board, high-fidelity Figma redesign, and a 3-phase strategic implementation roadmap.",
           ],
-          behanceUrl: "https://www.behance.net/gallery/254848485/Redesign-Skoob",
+          links: [
+            {
+              label: "Explore Project FigJam",
+              url: "https://www.figma.com/board/VzTl6NR6smdItGjusjidKU/Projeto---Arquitetura-de-Informa%C3%A7%C3%A3o?node-id=0-1",
+            },
+            {
+              label: "View Figma Redesign",
+              url: "https://www.figma.com/design/YqDKTm3I6dEoKec16hwDUp/Redesign-Botic%C3%A1rio?node-id=1-516",
+            },
+            {
+              label: "Google Drive Folder",
+              url: "https://drive.google.com/drive/u/0/folders/1lPg5JQavrfIX554jwSAKZPV6YZSdBV4r",
+            },
+          ],
           hasModal: true,
         },
         {
@@ -550,6 +621,43 @@ export const TRANSLATIONS = {
             "Automated CI/CD deployment pipeline on Cloudflare Pages connected directly to GitHub",
             "Live behavioral telemetry with Hotjar actively gathering navigation data to steer the V2 backlog",
           ],
+          hasModal: true,
+        },
+        {
+          id: "skoob",
+          title: "Redesign - Skoob",
+          subtitle: "Field Research, Qualitative Analysis & Asynchronous Book Club",
+          description:
+            "UX Research and product design study transforming Skoob's social experience through asynchronous book club features.",
+          tags: ["Redesign", "UX Research", "UX Design", "Communities", "Figma"],
+          metrics: ["+ Organic retention", "Hypothesis validation"],
+          role: "UX Researcher & Product Designer",
+          period: "2024",
+          overview:
+            "In-depth UX research study examining avid reader behavior on Skoob. We discovered that while users register books on Skoob, social discussions bleed into WhatsApp, Instagram, and TikTok. Based on this friction, we designed an Asynchronous Book Club feature with chapter goals.",
+          challenge:
+            "Readers struggled with disorganized WhatsApp groups (where key messages got lost quickly) and rigid live scheduled meetings incompatible with busy routines. Skoob lacked structured, spoiler-free discussion spaces.",
+          solution:
+            "Qualitative research with remote video interviews (participants aged 24-45), Proto Personas, CSD Matrix, and Affinity Mapping in FigJam. We designed an Asynchronous Book Club experience with chapter goals and topic-focused discussion forums.",
+          methodology: [
+            "Semi-Structured Qualitative Interviews (Participants aged 24-45)",
+            "CSD Matrix (Certainties, Suppositions, Doubts)",
+            "Proto Personas, Proto Journeys & Empathy Map (Persona Mariana)",
+            "Affinity Mapping & Thematic Pain Point Analysis",
+            "User Journey Mapping & User Stories",
+          ],
+          insights: [
+            "Users open Skoob to record books, but leave the app to socialize on external platforms.",
+            "Discussions must be asynchronous by chapter, enabling deep exchanges without mandatory live calls.",
+            "Community experience is richer when prioritizing users' primary social circles of trust.",
+          ],
+          results: [
+            "Value for Product (Skoob): Organic increase in user retention and in-app screen time, strengthening existing social networks within the ecosystem.",
+            "Value for Users: Elimination of the \"Netflix effect\" when picking books, reduced onboarding friction, and a lightweight social discussion space with zero schedule pressure.",
+            "Refined Hypothesis: Long-term engagement thrives through asynchronous discussions paced by chapter goals within primary social circles (friends and family).",
+            "End-to-end Asynchronous Book Club UX/UI architecture, spoiler alert system, and high-fidelity interactive Figma prototype.",
+          ],
+          behanceUrl: "https://www.behance.net/gallery/254848485/Redesign-Skoob",
           hasModal: true,
         },
         {

@@ -232,37 +232,58 @@ export default function ProjectModal({
           )}
 
           {/* Action Links Footer */}
-          {(project.behanceUrl || project.externalUrl) && (
+          {((project.links && project.links.length > 0) || project.behanceUrl || project.externalUrl) && (
             <div className="pt-6 border-t border-[#e2e4f0] flex items-center justify-between gap-4 flex-wrap">
               <p className="text-[#6c727f] text-sm font-medium">
-                {isPt ? "Quer explorar a apresentação completa?" : "Want to view the complete presentation?"}
+                {isPt ? "Quer explorar os materiais completos?" : "Want to explore the complete project files?"}
               </p>
               <div className="flex items-center gap-3 flex-wrap">
-                {project.externalUrl && (
-                  <a
-                    href={project.externalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="brand-gradient inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl hover:opacity-90 transition-all shadow-md shadow-[#5b68f5]/20 text-sm cursor-pointer"
-                  >
-                    <ExternalLink size={16} />
-                    {project.externalUrlLabel || (isPt ? "Acessar Case Interativo" : "Access Interactive Case")}
-                  </a>
-                )}
-                {project.behanceUrl && (
-                  <a
-                    href={project.behanceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={
-                      project.externalUrl
-                        ? "bg-[#f8f9fc] hover:bg-[#eef2ff] border border-[#e2e4f0] text-[#1c1b1b] font-bold px-6 py-3 rounded-xl transition-all text-sm flex items-center gap-2 cursor-pointer"
-                        : "brand-gradient inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl hover:opacity-90 transition-all shadow-md shadow-[#5b68f5]/20 text-sm cursor-pointer"
-                    }
-                  >
-                    <ExternalLink size={16} />
-                    {isPt ? "Ver no Behance" : "View on Behance"}
-                  </a>
+                {project.links && project.links.length > 0 ? (
+                  project.links.map((link, idx) => (
+                    <a
+                      key={idx}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={
+                        idx === 0
+                          ? "brand-gradient inline-flex items-center gap-2 text-white font-bold px-5 py-2.5 rounded-xl hover:opacity-90 transition-all shadow-md shadow-[#5b68f5]/20 text-sm cursor-pointer"
+                          : "bg-[#f8f9fc] hover:bg-[#eef2ff] border border-[#e2e4f0] text-[#1c1b1b] font-bold px-5 py-2.5 rounded-xl transition-all text-sm flex items-center gap-2 cursor-pointer"
+                      }
+                    >
+                      <ExternalLink size={16} />
+                      {link.label}
+                    </a>
+                  ))
+                ) : (
+                  <>
+                    {project.externalUrl && (
+                      <a
+                        href={project.externalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="brand-gradient inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl hover:opacity-90 transition-all shadow-md shadow-[#5b68f5]/20 text-sm cursor-pointer"
+                      >
+                        <ExternalLink size={16} />
+                        {project.externalUrlLabel || (isPt ? "Acessar Case Interativo" : "Access Interactive Case")}
+                      </a>
+                    )}
+                    {project.behanceUrl && (
+                      <a
+                        href={project.behanceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={
+                          project.externalUrl
+                            ? "bg-[#f8f9fc] hover:bg-[#eef2ff] border border-[#e2e4f0] text-[#1c1b1b] font-bold px-6 py-3 rounded-xl transition-all text-sm flex items-center gap-2 cursor-pointer"
+                            : "brand-gradient inline-flex items-center gap-2 text-white font-bold px-6 py-3 rounded-xl hover:opacity-90 transition-all shadow-md shadow-[#5b68f5]/20 text-sm cursor-pointer"
+                        }
+                      >
+                        <ExternalLink size={16} />
+                        {isPt ? "Ver no Behance" : "View on Behance"}
+                      </a>
+                    )}
+                  </>
                 )}
               </div>
             </div>
