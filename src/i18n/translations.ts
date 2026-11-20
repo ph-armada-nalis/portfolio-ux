@@ -79,7 +79,7 @@ export const TRANSLATIONS = {
       items: [
         {
           id: "boticario",
-          title: "Redesign - E-commerce O Boticário",
+          title: "Redesign - Site da Boticário",
           subtitle: "Arquitetura de Informação, Pesquisa Qualitativa & Design de Conteúdo com IA",
           description:
             "Reestruturação taxonômica e redesign do e-commerce O Boticário centrados em 3 contextos de compra, auditoria de 45 itens e IA generativa consultiva.",
@@ -498,7 +498,7 @@ export const TRANSLATIONS = {
       items: [
         {
           id: "boticario",
-          title: "Redesign - O Boticário E-commerce",
+          title: "Redesign - O Boticário Website",
           subtitle: "Information Architecture, Qualitative Research & AI Content Design",
           description:
             "Taxonomic restructuring and e-commerce redesign for O Boticário centered on 3 purchasing contexts, 45-item audit, and consultative generative AI.",
